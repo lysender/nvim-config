@@ -21,11 +21,17 @@ Copy the contents of this repo to the following locations:
 ### Linux
 
 Delete the following directories:
-- ~/.local/share/nvim/
-- ~/.local/state/nvim/
+
+```
+~/.local/share/nvim/
+~/.local/state/nvim/
+```
 
 You may also delete the main config:
-- ~/.config/nvim/
+
+```
+~/.config/nvim/
+```
 
 ### Windows
 
