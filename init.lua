@@ -198,22 +198,13 @@ require('lazy').setup({
   --   end,
   -- },
 
-  -- {
-  --   "ellisonleao/gruvbox.nvim",
-  --   priority = 1000 ,
-  --   -- config = true,
-  --   -- opts = ...,
-  --   config = function()
-  --     vim.cmd.colorscheme 'gruvbox'
-  --   end,
-  -- },
-
   {
-    'rose-pine/neovim',
+    "ellisonleao/gruvbox.nvim",
     priority = 1000 ,
-    name = 'rose-pine',
+    -- config = true,
+    -- opts = ...,
     config = function()
-      vim.cmd.colorscheme 'rose-pine'
+      vim.cmd.colorscheme 'gruvbox'
     end,
   },
 
@@ -224,7 +215,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'rose-pine',
+        theme = 'gruvbox',
         component_separators = '|',
         section_separators = '',
       },
