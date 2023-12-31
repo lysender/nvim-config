@@ -198,16 +198,25 @@ require('lazy').setup({
   --     vim.cmd.colorscheme 'onedark'
   --   end,
   -- },
-
+  --
   {
-    "ellisonleao/gruvbox.nvim",
+    "rose-pine/neovim",
+    name = "rose-pine",
     priority = 1000 ,
-    -- config = true,
-    -- opts = ...,
     config = function()
-      vim.cmd.colorscheme 'gruvbox'
+      vim.cmd.colorscheme 'rose-pine'
     end,
   },
+
+  -- {
+  --   "ellisonleao/gruvbox.nvim",
+  --   priority = 1000 ,
+  --   -- config = true,
+  --   -- opts = ...,
+  --   config = function()
+  --     vim.cmd.colorscheme 'gruvbox'
+  --   end,
+  -- },
 
   {
     -- Set lualine as statusline
@@ -216,7 +225,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'gruvbox',
+        theme = 'rose-pine',
         component_separators = '|',
         section_separators = '',
       },
