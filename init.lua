@@ -589,6 +589,7 @@ require("lazy").setup({
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"css-lsp",
+				"gopls",
 				"html-lsp",
 				"htmx-lsp",
 				"rust-analyzer",
@@ -623,6 +624,7 @@ require("lazy").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				-- Conform can also run multiple formatters sequentially
+				go = { "goimports", "gofmt" },
 				-- python = { "isort", "black" },
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter
