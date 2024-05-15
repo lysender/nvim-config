@@ -1,5 +1,8 @@
 vim.keymap.set("n", "<leader>pp", vim.cmd.Ex)
 
+vim.keymap.set("n", "<leader>op", ":Copilot enable<CR>")
+vim.keymap.set("n", "<leader>oop", ":Copilot disable<CR>")
+
 -- Move highlighted block up or down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
