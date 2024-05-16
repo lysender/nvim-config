@@ -1,4 +1,6 @@
-vim.keymap.set("n", "<leader>pp", vim.cmd.Ex)
+-- Show netrw file explorer
+-- However, we got oil.nvim, so disable it for now
+-- vim.keymap.set("n", "<leader>pp", vim.cmd.Ex)
 
 vim.keymap.set("n", "<leader>op", ":Copilot enable<CR>")
 vim.keymap.set("n", "<leader>oop", ":Copilot disable<CR>")
