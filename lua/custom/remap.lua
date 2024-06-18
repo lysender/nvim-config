@@ -2,6 +2,15 @@
 -- However, we got oil.nvim, so disable it for now
 -- vim.keymap.set("n", "<leader>pp", vim.cmd.Ex)
 
+-- Create vertical split window
+vim.keymap.set("n", "<leader>vv", ":vsplit<CR>")
+
+-- Create horizontal split window
+vim.keymap.set("n", "<leader>hh", ":split<CR>")
+
+-- Open terminal in a vertical split window
+vim.keymap.set("n", "<leader>tt", ":vsplit<CR>:term<CR>")
+
 vim.keymap.set("n", "<leader>op", ":Copilot enable<CR>")
 vim.keymap.set("n", "<leader>oop", ":Copilot disable<CR>")
 
