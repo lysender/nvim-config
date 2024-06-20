@@ -11,6 +11,9 @@ vim.keymap.set("n", "<leader>hh", ":split<CR>")
 -- Open terminal in a vertical split window
 vim.keymap.set("n", "<leader>tt", ":vsplit<CR>:term<CR>")
 
+-- Open terminal in a horizontal split window
+vim.keymap.set("n", "<leader>st", ":split<CR>:term<CR>")
+
 vim.keymap.set("n", "<leader>op", ":Copilot enable<CR>")
 vim.keymap.set("n", "<leader>oop", ":Copilot disable<CR>")
 
