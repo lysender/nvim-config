@@ -614,7 +614,6 @@ require("lazy").setup({
 				"css-lsp",
 				"gopls",
 				"html-lsp",
-				"htmx-lsp",
 				"rust-analyzer",
 				"stylua",
 				"typescript-language-server",
