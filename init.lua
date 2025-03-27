@@ -718,7 +718,11 @@ require("lazy").setup({
 				-- python = { "isort", "black" },
 				--
 				-- You can use 'stop_after_first' to run the first available formatter from the list
-				javascript = { "biome-check", "biome-organize-imports", stop_after_first = true },
+				-- javascript = { "prettierd", "prettier", stop_after_first = true },
+				javascript = { "biome" },
+				javascriptreact = { "biome" },
+				typescript = { "biome" },
+				typescriptreact = { "biome" },
 				go = { "goimports", "gofmt" },
 				rust = { "rustfmt" },
 			},
