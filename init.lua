@@ -687,7 +687,8 @@ require("lazy").setup({
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
 				ts_ls = {},
-				--
+				vue_ls = {},
+				svelte = {},
 
 				lua_ls = {
 					-- cmd = { ... },
@@ -725,6 +726,10 @@ require("lazy").setup({
 				"stylua", -- Used to format Lua code
 				"pyright",
 				-- "pylsp",
+				"ts_ls",
+				"angularls",
+				"vue_ls",
+				"svelte",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
