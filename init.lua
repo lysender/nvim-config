@@ -790,7 +790,7 @@ require("lazy").setup({
 				typescript = { "biome", "biome-organize-imports" },
 				typescriptreact = { "biome", "biome-organize-imports" },
 				go = { "goimports", "gofmt" },
-				rust = { "rustfmt" },
+				rust = { "rustfmt", "leptosfmt" },
 			},
 		},
 	},
