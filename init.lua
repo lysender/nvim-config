@@ -690,6 +690,7 @@ require("lazy").setup({
 				-- angularls = {},
 				-- vue_ls = {},
 				-- svelte = {},
+				terraformls = {},
 
 				lua_ls = {
 					-- cmd = { ... },
@@ -731,6 +732,7 @@ require("lazy").setup({
 				-- "angularls",
 				-- "vue_ls",
 				-- "svelte",
+				"terraformls",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
