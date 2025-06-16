@@ -793,6 +793,7 @@ require("lazy").setup({
 				typescriptreact = { "biome", "biome-organize-imports" },
 				go = { "goimports", "gofmt" },
 				rust = { "rustfmt", "leptosfmt" },
+				terraform = { "terraform_fmt" },
 			},
 		},
 	},
