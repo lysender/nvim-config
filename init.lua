@@ -691,6 +691,7 @@ require("lazy").setup({
 				-- vue_ls = {},
 				-- svelte = {},
 				terraformls = {},
+				phpactor = {},
 
 				lua_ls = {
 					-- cmd = { ... },
@@ -733,6 +734,7 @@ require("lazy").setup({
 				-- "vue_ls",
 				-- "svelte",
 				"terraformls",
+				"phpactor",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
@@ -794,6 +796,7 @@ require("lazy").setup({
 				go = { "goimports", "gofmt" },
 				rust = { "rustfmt", "leptosfmt" },
 				terraform = { "terraform_fmt" },
+				php = { "mago_format", "mago_lint" },
 			},
 		},
 	},
