@@ -691,8 +691,11 @@ require("lazy").setup({
 				-- vue_ls = {},
 				-- svelte = {},
 				terraformls = {},
-				-- phpactor = {},
-				intelephense = {},
+				intelephense = {
+					cmd = { "intelephense", "--stdio" },
+					filetypes = { "php" },
+					root_markers = { ".git", "composer.json" },
+				},
 
 				lua_ls = {
 					-- cmd = { ... },
@@ -735,7 +738,6 @@ require("lazy").setup({
 				-- "vue_ls",
 				-- "svelte",
 				"terraformls",
-				-- "phpactor",
 				"intelephense",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
