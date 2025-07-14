@@ -691,6 +691,9 @@ require("lazy").setup({
 				-- vue_ls = {},
 				-- svelte = {},
 				terraformls = {},
+
+				-- License key should be at ~/intelephense/licence.txt
+				-- NOTE: spelling is licence.txt
 				intelephense = {
 					cmd = { "intelephense", "--stdio" },
 					filetypes = { "php" },
