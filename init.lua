@@ -227,16 +227,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
--- Get platform dependant build script
-local function tabnine_build_path()
-	-- Replace vim.uv with vim.loop if using NVIM 0.9.0 or below
-	if vim.uv.os_uname().sysname == "Windows_NT" then
-		return "pwsh.exe -file .\\dl_binaries.ps1"
-	else
-		return "./dl_binaries.sh"
-	end
-end
-
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
@@ -820,7 +810,6 @@ require("lazy").setup({
 				go = { "goimports", "gofmt" },
 				rust = { "rustfmt", "leptosfmt" },
 				terraform = { "terraform_fmt" },
-				php = { "mago_format" },
 			},
 		},
 	},
@@ -1047,8 +1036,6 @@ require("lazy").setup({
 		--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 	},
 
-	{ "codota/tabnine-nvim", build = tabnine_build_path() },
-
 	-- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
 	-- init.lua. If you want these files, they are in the repository, so you can just download them and
 	-- place them in the correct locations.
@@ -1099,24 +1086,6 @@ require("lazy").setup({
 
 --- Custom keymaps
 require("custom.remap")
-
--- Activate tabnine
-require("tabnine").setup({
-	disable_auto_comment = true,
-	accept_keymap = "<Tab>",
-	dismiss_keymap = "<C-]>",
-	debounce_ms = 800,
-	suggestion_color = { gui = "#808080", cterm = 244 },
-	exclude_filetypes = { "TelescopePrompt", "NvimTree" },
-	log_file_path = nil, -- absolute path to Tabnine log file
-	ignore_certificate_errors = false,
-	-- workspace_folders = {
-	--   paths = { "/your/project" },
-	--   get_paths = function()
-	--       return { "/your/project" }
-	--   end,
-	-- },
-})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
