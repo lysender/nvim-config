@@ -25,8 +25,5 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- Do not use tab to accept Github Copilot suggestion
-vim.keymap.set("i", "<C-y>", 'copilot#Accept("")', {
-	expr = true,
-	replace_keycodes = false,
-})
 vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
