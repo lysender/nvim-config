@@ -807,10 +807,10 @@ require("lazy").setup({
 				--
 				-- You can use 'stop_after_first' to run the first available formatter from the list
 				-- javascript = { "prettierd", "prettier", stop_after_first = true },
-				javascript = { "biome", "biome-organize-imports" },
-				javascriptreact = { "biome", "biome-organize-imports" },
-				typescript = { "biome", "biome-organize-imports" },
-				typescriptreact = { "biome", "biome-organize-imports" },
+				javascript = { "biome" },
+				javascriptreact = { "biome" },
+				typescript = { "biome" },
+				typescriptreact = { "biome" },
 				go = { "goimports", "gofmt" },
 				rust = { "rustfmt", "leptosfmt" },
 				terraform = { "terraform_fmt" },
