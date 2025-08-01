@@ -814,6 +814,7 @@ require("lazy").setup({
 				go = { "goimports", "gofmt" },
 				rust = { "rustfmt", "leptosfmt" },
 				terraform = { "terraform_fmt" },
+				php = { "mago_format" },
 			},
 		},
 	},
