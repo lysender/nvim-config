@@ -699,6 +699,13 @@ require("lazy").setup({
 				-- License key should be at ~/intelephense/licence.txt
 				-- NOTE: spelling is licence.txt
 				intelephense = {
+					settings = {
+						intelephense = {
+							diagnostics = {
+								undefinedProperties = false,
+							},
+						},
+					},
 					cmd = { "intelephense", "--stdio" },
 					filetypes = { "php" },
 					root_markers = { ".git", "composer.json" },
