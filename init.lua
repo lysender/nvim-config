@@ -818,6 +818,7 @@ require("lazy").setup({
 				javascriptreact = { "biome" },
 				typescript = { "biome" },
 				typescriptreact = { "biome" },
+				json = { "biome" },
 				css = { "biome" },
 				scss = { "biome" },
 				html = { "biome" },
