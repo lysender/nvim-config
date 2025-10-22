@@ -27,3 +27,6 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- Do not use tab to accept Github Copilot suggestion
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_assume_mapped = true
+
+-- Do not use tab to accept Windsurf suggestion
+vim.g.codeium_no_map_tab = true
