@@ -766,7 +766,11 @@ require("lazy").setup({
 						-- by the server configuration above. Useful when disabling
 						-- certain features of an LSP (for example, turning off formatting for ts_ls)
 						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-						require("lspconfig")[server_name].setup(server)
+						-- Original method was to use lspconfig, now replaced with built-in lsp
+						-- require("lspconfig")[server_name].setup(server)
+						-- Use built-in lsp config
+						vim.lsp.config(server_name, server)
+						vim.lsp.enable(server_name)
 					end,
 				},
 			})
@@ -978,7 +982,7 @@ require("lazy").setup({
 	},
 
 	{ -- Collection of various small independent plugins/modules
-		"echasnovski/mini.nvim",
+		"nvim-mini/mini.nvim",
 		config = function()
 			-- Better Around/Inside textobjects
 			--
@@ -1011,7 +1015,7 @@ require("lazy").setup({
 			end
 
 			-- ... and there is more!
-			--  Check out: https://github.com/echasnovski/mini.nvim
+			--  Check out: https://github.com/nvim-mini/mini.nvim
 		end,
 	},
 	{ -- Highlight, edit, and navigate code
