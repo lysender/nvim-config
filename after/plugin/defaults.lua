@@ -1,21 +1,21 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- Default tab settings
 -- Override tab settings by using .editorconfig
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
 
-vim.opt.expandtab = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
+vim.o.expandtab = true
+vim.o.autoindent = true
+vim.o.smartindent = true
 
-vim.opt.wrap = false
+vim.o.wrap = false
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+vim.o.hlsearch = false
+vim.o.incsearch = true
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = 'yes'
-vim.opt.colorcolumn = '120'
+vim.o.scrolloff = 8
+vim.o.signcolumn = "yes"
+vim.o.colorcolumn = "120"
