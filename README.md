@@ -1,5 +1,11 @@
 # nvim-config
 
+NeoVim configuration targeting the following languages:
+- Frontend development (HTML, CSS, JavaScript, TypeScript, React)
+- Node.js backend development (JavaScript, TypeScript)
+- PHP
+- Rust
+
 ## Config Paths
 
 Copy the contents of this repo to the following locations:
