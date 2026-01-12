@@ -13,4 +13,12 @@ return {
       vim.cmd.hi("Comment gui=none")
     end,
   },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "rose-pine", -- Set your theme name here
+      -- You can add specific style options for some themes, e.g., style = "moon" for TokyoNight
+    },
+  },
 }
