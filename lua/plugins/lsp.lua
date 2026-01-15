@@ -8,7 +8,9 @@ return {
       inlay_hints = { enabled = false },
       servers = {
         ["*"] = {
-          keys = {},
+          keys = {
+            { "gO", require("telescope.builtin").lsp_document_symbols, desc = "Open Document Symbols" },
+          },
         },
         gopls = {},
         rust_analyzer = {},
