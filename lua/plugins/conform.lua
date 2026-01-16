@@ -14,18 +14,15 @@ return {
       },
     },
     opts = {
+      default_format_opts = {
+        timeout_ms = 3000,
+        async = false,
+        quiet = false,
+        lsp_format = "never", -- do not use lsp formatting as fallback
+      },
+
       notify_on_error = false,
-      -- format_on_save = function(bufnr)
-      --   -- Disable "format_on_save lsp_fallback" for languages that don't
-      --   -- have a well standardized coding style. You can add additional
-      --   -- languages here or re-enable it for the disabled ones.
-      --   -- local disable_filetypes = { c = true, cpp = true }
-      --   local lsp_format_opt = "never"
-      --   return {
-      --     timeout_ms = 500,
-      --     lsp_format = lsp_format_opt,
-      --   }
-      -- end,
+
       formatters_by_ft = {
         lua = { "stylua" },
         -- Conform can also run multiple formatters sequentially
@@ -40,7 +37,7 @@ return {
         json = { "biome" },
         css = { "biome" },
         scss = { "biome" },
-        html = { "biome" },
+        -- html = { "biome" },
         go = { "goimports", "gofmt" },
         rust = { "rustfmt" },
         terraform = { "terraform_fmt" },

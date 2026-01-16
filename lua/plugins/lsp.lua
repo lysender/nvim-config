@@ -6,6 +6,8 @@ return {
       ---@type lspconfig.options
 
       inlay_hints = { enabled = false },
+      folds = { enabled = false },
+
       servers = {
         ["*"] = {
           keys = {
