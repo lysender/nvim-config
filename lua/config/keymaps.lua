@@ -1,7 +1,6 @@
--- Show netrw file explorer
--- However, we got oil.nvim, so disable it for now
--- vim.keymap.set("n", "<leader>pp", vim.cmd.Ex)
-
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
 -- Create vertical split window
 vim.keymap.set("n", "<leader>vv", ":vsplit<CR>")
 
