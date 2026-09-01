@@ -7,4 +7,8 @@ return {
     "folke/persistence.nvim",
     enabled = false,
   },
+  {
+    "github/copilot.vim",
+    enabled = false,
+  },
 }
