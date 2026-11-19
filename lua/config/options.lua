@@ -130,3 +130,16 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.hl.on_yank()
   end,
 })
+
+-- Neovim to check for external changes
+vim.opt.autoread = true
+
+vim.api.nvim_create_autocmd({
+  "FocusGained",
+  "BufEnter",
+  "CursorHold",
+  "CursorHoldI",
+}, {
+  pattern = "*",
+  command = "checktime",
+})
