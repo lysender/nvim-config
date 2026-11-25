@@ -5,14 +5,6 @@ return {
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     "rose-pine/neovim",
-    opts = {
-      highlight_groups = {
-        GitSignsCurrentLineBlame = {
-          fg = "highlight_high",
-          italic = true,
-        },
-      },
-    },
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       vim.cmd.colorscheme("rose-pine")
